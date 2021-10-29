@@ -1,0 +1,92 @@
+
+Aim:
+To create a JSON file for a list of cities and provide autocomplete option for city field
+using the JSON file as source.
+
+
+Procedure:
+
+• Open VS code editor. Create new file and select language as “HTML.
+• Create the structure of HTML and include the Style in head and script in body
+tag.
+• Create the countries.js file which stores the names of the cities in the country to
+be autocomplete. The JSON data returned by the AutoCompleteCountry
+method will be used to create the autocomplete unordered list and displayed to
+the user.
+
+• Download the plugin jquery.autocomplete, jquery.mockjax.js and jquery-
+1.8.2.min.js and add these files in the html file under script tag.In demo.js file
+
+,json file data is parsed and included in main html file.
+• Add the appropriate styles to make the web page more attractive in the head
+tag.
+• Save the document as .html extension and run the file by opening the HTML
+document in the browser.
+Experiment 5.b.
+Date:
+
+Design of autocomplete option for city field using the
+
+JSON file as source
+
+Coding:
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Autocomplete Program</title>
+<link href="styles.css" rel="stylesheet" />
+<style>
+body{
+align-content: center;
+background-color: rgb(179, 236, 236);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Autocomplete Program</h1>
+
+<p>Type country name in english:</p>
+<div style="position: relative; height: 80px;">
+<input type="text" name="country" id="autocomplete-ajax"
+style="position: absolute; z-index: 2; background: transparent;"/>
+
+<input type="text" name="country" id="autocomplete-ajax-x"
+disabled="disabled" style="color: #CCC; position: absolute; background:
+transparent; z-index: 1;"/>
+
+</div>
+<div id="selction-ajax"></div>
+
+</div>
+
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jquery.mockjax.js"></script>
+<script type="text/javascript" src="jquery.autocomplete.js"></script>
+<script type="text/javascript" src="countries.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>
+
+countries.js
+var countries = {
+"CH": "Chennai",
+"BE": "Bengaluru",
+"KO": "Kolkata",
+"MU": "Mumbai",
+"PU": "Punjab",
+"HY": "Hydrabed",
+"PU": "Pune",
+"GU": "Gujarat",
+"TA": "Tamil nadu",
+"TI": "Tiruppur",
+"CO": "Coimbatore"
+
+}
+
+output:
+
+Result:
+The JSON file to provide the autocomplete options for the cities is done successfully
+and the output is verified.
